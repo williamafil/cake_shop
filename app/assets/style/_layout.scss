@@ -1,0 +1,106 @@
+.collapse_menu {
+  display: none;
+}
+
+.logo {
+  img {
+    width: 200px;
+  }
+}
+
+nav.fullsize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+
+  color: $dark_green;
+
+  ul {
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  li + li {
+    padding-left: 20px;
+  }
+
+  li a:hover {
+    color: $medium_green;
+    border-bottom: 3px solid $dark_green;
+  }
+}
+
+nav.mobile {
+  display: none;
+}
+
+//
+// 手機
+//
+
+@media (max-width: 510px) {
+  .hamburger {
+    cursor: pointer;
+  }
+
+  nav.fullsize {
+    display: none;
+  }
+
+  nav.mobile {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  #nav-toggle:checked ~ .collapse_menu {
+    max-height: 100%;
+  }
+
+  .collapse_menu {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      // display: block;
+      padding: 0;
+      width: 100%;
+    }
+
+    li {
+      text-align: center;
+      display: block;
+      width: 70px;
+      padding: 20px 0;
+
+      a {
+        font-weight: 400;
+      }
+      a:hover {
+        color: $medium_green;
+      }
+    }
+
+    li + li {
+      border-top: 1px solid #3f5d45;
+    }
+  }
+}

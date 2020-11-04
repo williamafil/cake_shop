@@ -1,0 +1,32 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.d-none {
+  display: none;
+}
+
+.noto_serif {
+  font-family: "Noto Serif TC", serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $dark_green;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
