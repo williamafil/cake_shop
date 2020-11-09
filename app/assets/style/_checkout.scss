@@ -1,0 +1,130 @@
+.cs-content{
+    max-width: 100%;
+}
+
+.cs-bn{
+    margin: 0 auto;
+    width: 940px;
+    height: 460px;
+
+    background-image:url(../images/brooke-lark-385507-unsplash.jpg);
+    background-repeat:no-repeat;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 60px;
+}
+
+
+
+.cs-paydone-message{
+    position: absolute;
+    z-index: 1;
+
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.cs-img{
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+// 偽元素時間軸
+.cs-container{
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .cs-paydone{
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+
+    margin-bottom: 100px;
+  }
+  
+  .cs-paydone-item{
+    color: #FFF;
+    position: relative;
+
+    i{
+        width: 10px;
+        position: absolute;
+        top: 1px;
+    }
+  }
+  
+  .cs-paydone-item:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    width: 20px;
+    height: 20px;
+    background-color: $dark_green;
+    border-radius: 50%;
+   
+  }
+
+
+  .timeLine:after{
+    content: "";
+    position: absolute;
+    z-index: -2;
+    
+    border-bottom: 1px solid $dark_green;
+  
+    top: 10px;
+    bottom: 0px;
+    width: 100px;
+      
+  }
+
+// 逛逛按鈕
+.cs-btn{
+    width: 100%;
+    padding: 15px 0;
+    background-color: #FFE180;
+
+    color: $dark_green;
+    font-size: $font-xxl;
+    text-align: center;
+
+}
+
+.cs-keepbtn-out{
+    display: none;
+}
+
+
+
+
+
+
+// 手機版
+
+@media (max-width: 510px) {
+
+    .cs-bn{
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .cs-keepbtn{
+        display: none;
+    }
+
+    .cs-keepbtn-out{
+        display: grid;
+    }
+
+}
+
