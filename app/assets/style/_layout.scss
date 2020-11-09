@@ -1,3 +1,9 @@
+// 檢視用
+
+
+
+// nav部分
+// 手機版消失
 .collapse_menu {
   display: none;
 }
@@ -12,15 +18,17 @@ nav.fullsize {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+  margin: 30px 0;
 
   color: $dark_green;
 
   ul {
     list-style: none;
+    font-size: 16px;
+
+	  width: 319px;
     display: flex;
-    font-size: 18px;
-    font-weight: 500;
+    justify-content: space-between;
   }
 
   li + li {
@@ -37,11 +45,132 @@ nav.mobile {
   display: none;
 }
 
+// footer部分
+
+footer{
+	max-width: 100%;
+  background-color: $light_green;
+  color: $dark_green;
+}
+
+.subscription{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: aqua;
+}
+	
+.mailhint{
+  background-color: $dark_green;
+
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: $font-xl;
+  color: #fff;
+
+  img{
+    width: 50px;
+    padding-right: 20px;
+  }
+
+}
+
+.typeemail{
+  width: 50%;
+  display: flex;
+  padding: 30PX;
+
+  background-color: $dark_green;
+
+
+  .email{
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+    padding: 16px 20px;
+
+    img{
+      padding-right: 20px;
+
+    }
+
+    input{
+      width: 256px;
+      border: none;
+      outline: none;
+    }
+
+
+  }
+  
+  .subimt{
+    padding: 20px 24px;
+    background-color: #FFE180;
+
+    text-align: center;
+
+  }
+
+
+}
+
+// 下
+
+.contact{
+  display: flex;
+  justify-content: space-around;
+  font-size: $font-s;
+}
+
+.contactus{
+  width: 227px;
+  margin: 30px;
+
+  .contactlogo{
+    width: 70%;
+    padding-bottom: 100px;
+  }
+  
+  .contactinfo{
+
+    line-height: 24px;
+    padding-bottom: 30px;
+  }
+  
+  .icon{
+    img{
+      width: 10%;
+    }
+  }
+  
+
+}
+
+.brand{
+  margin: 30px;
+  width: 227px;
+  text-align: right;
+  
+ 
+  .slogan img{
+    width: 60px;
+    padding-bottom: 82px;
+}
+
+}
+
+
+
 //
 // 手機
 //
 
 @media (max-width: 510px) {
+  // nav部分
   .hamburger {
     cursor: pointer;
   }
@@ -51,11 +180,15 @@ nav.mobile {
   }
 
   nav.mobile {
-    margin: 20px;
+    margin: 21px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+
+    i{
+      color: $dark_green;
+    }
   }
 
   #nav-toggle:checked ~ .collapse_menu {
@@ -72,7 +205,7 @@ nav.mobile {
     top: 80px;
     left: 0;
     background-color: #fff;
-    z-index: 1;
+    z-index: 2;
 
     ul {
       list-style: none;
@@ -103,4 +236,42 @@ nav.mobile {
       border-top: 1px solid #3f5d45;
     }
   }
+
+
+
+    // footer部分
+
+    .subscription{
+      display: flex;
+      flex-direction: column;
+
+
+      .mailhint{
+        padding: 30px;
+        width: 100%;
+
+      }
+
+      .typeemail{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 30px;
+
+        input{
+          width: 100%;
+        }
+      }
+    }
+
+    .contact{
+
+      .brand{
+        display: none;
+      }
+    }
+
+
+
+
 }
