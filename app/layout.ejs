@@ -10,40 +10,117 @@
     />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
+
   <body>
+
+
+ <!-- 網頁版nav部分 -->
     <header class="container">
       <nav class="fullsize">
-        <a href="#" class="logo">
+        <a href="/app/index.html" class="logo">
           <img src="../assets/images/logo-all-dark.svg" alt="sweetaste logo" />
         </a>
         <ul>
-          <li><a href="#">首頁</a></li>
-          <li><a href="#">甜點</a></li>
-          <li><a href="#">登入</a></li>
-          <li><a href="#">購物車</a></li>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="product.html">甜點</a></li>
+          <li><a href="login.html">登入</a></li>
+          <li><a href="cart.html"  target="_self"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
       </nav>
+
+
+<!-- 手機版nav部分-->
       <input type="checkbox" name="nav-toggle" id="nav-toggle" class="d-none" />
       <nav class="mobile">
+
         <label for="nav-toggle">
           <i class="fas fa-bars hamburger"></i>
         </label>
-        <a href="#" class="logo">
+
+        <a href="index.html" class="logo">
           <img src="../assets/images/logo-all-dark.svg" alt="sweetaste logo" />
         </a>
-        <i class="fas fa-shopping-cart"></i>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i>
       </nav>
+
       <div class="collapse_menu">
         <ul>
-          <li><a href="#">首頁</a></li>
-          <li><a href="#">甜點</a></li>
-          <li><a href="#">登入</a></li>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="product.html">甜點</a></li>
+          <li><a href="login.html">登入</a></li>
         </ul>
       </div>
     </header>
 
     <%- contents %>
 
-    <footer></footer>
+    
+
+    <footer>
+     <div class="subscription">
+        <div class="mailhint">
+
+          <img src="../assets/images/logo-light.svg" alt="">
+          <p>訂閱你我的甜蜜郵件</p>
+        
+        </div>
+
+        <div class="typeemail">
+
+          <div class="email">
+
+            <img src="../assets/images/mail-24px.png" alt="">
+
+          <form action="test.php" method="post">
+            <input type="text" name="UserName">
+          </div>
+
+            <div class="subimt">
+            <input type="image" src="assets/images/arrow_forward-24px.png" alt="Submit">
+           </div>
+          </form>
+
+
+
+        </div>
+    </div>
+
+
+  <div class="contact">
+
+    <div class="contactus">
+      <div class="contactlogo">
+        <img src="../assets/images/logotype-lg-dark.png" alt="logo">
+      </div>
+      
+      
+      <div class="contactinfo">
+      <P>07-1234-5678</P>
+      <P>sweetaste@email.com</P>
+      <P>800 高雄市新興區幸福路 520 號</P>
+     </div>
+
+      <div class="icon">
+      <a href="#facebook"><img src="../assets/images/ic-facebook.svg" alt=""></a>
+      <a href="#line"><img src="../assets/images/ic-line@.svg" alt=""></a>
+    </div>
+
+    </div>
+
+
+    <div class="brand">
+      <div class="slogan">
+        <img src="../assets/images/sm-今天是個吃甜點的好日子.png" alt="slogan">
+      </div>
+      
+
+    <div class="copyright">
+     <P>© 2018 Sweetaste* All Rights Reserved</P>
+    </div>
+
+    </div>
+        
+  </div>
+    </footer>
   </body>
 </html>
