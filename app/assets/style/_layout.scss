@@ -57,7 +57,7 @@ footer{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	background-color: aqua;
+	background-color: $dark_green;
 }
 	
 .mailhint{
@@ -86,12 +86,15 @@ footer{
   background-color: $dark_green;
 
 
+
   .email{
     display: flex;
     align-items: center;
 
     background-color: #fff;
     padding: 16px 20px;
+    width: 100%;
+ 
 
     img{
       padding-right: 20px;
@@ -99,7 +102,7 @@ footer{
     }
 
     input{
-      width: 256px;
+      // width: 256px;
       border: none;
       outline: none;
     }
@@ -169,7 +172,7 @@ footer{
 // 手機
 //
 
-@media (max-width: 510px) {
+@media (max-width: 650px) {
   // nav部分
   .hamburger {
     cursor: pointer;
