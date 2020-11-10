@@ -3,19 +3,17 @@
     margin: 60px auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;    
-    max-width: 100%;
-    height: auto;
+    justify-content: center;
 
     img{
-
+        max-width: 100%;
+        height: auto;
     }
 
     ul{
         flex-direction: column;
         width: 33%;
         text-align: center;
-        justify-content: center;
     }
 
 }
@@ -23,9 +21,35 @@
 // 左邊的login區
 .loginBlock{
     display: flex;
+    justify-content: space-between;
     background-color: $dark_green;
     color: $white;
     font-size: 36px;
+
+    .titleOfLogin{
+        line-height: 120px;
+    }
+
+    input{
+        background-color: $light_green;
+        border: 0;
+    }    
+
+    .rememberBlock{
+        font-size: 16px;
+    }
+
+    .loginButton{
+        border: pink 1px solid;
+        font-size: 24px;
+        line-height: 65px;
+        background-color: $yellow;
+        
+        a{
+            display: block;
+        }
+
+    }
 
 }
 
@@ -43,14 +67,15 @@
 
     .smButton{
         background-color: $white;
-        margin: 16px 30px;
-        padding: 9px 100px;
+        margin: 5% 8%;
         line-height: 0;
 
-
         img{
-            height: 56px;
-        }
+                display: block;
+                margin-left: 33%;
+                width: 33%;
+                height: 56px;
+        }   
 
     }
 }
