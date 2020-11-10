@@ -1,0 +1,56 @@
+// 整體設定
+.content{
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    max-width: 100%;
+    height: auto;
+
+    img{
+
+    }
+
+    ul{
+        flex-direction: column;
+        width: 33%;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+// 左邊的login區
+.loginBlock{
+    display: flex;
+    background-color: $dark_green;
+    color: $white;
+    font-size: 36px;
+
+}
+
+// 右邊的social media區
+.socialMediaBlock{
+    background-color: $light_green;
+    color: $medium_green;
+    margin: 1.5% 0;
+    font-size: 24px; 
+    
+    .titleOfsocialMedia{
+        margin: 9% 0;
+        font-weight: lighter;
+    }
+
+    .smButton{
+        background-color: $white;
+        margin: 16px 30px;
+        padding: 9px 100px;
+        line-height: 0;
+
+
+        img{
+            height: 56px;
+        }
+
+    }
+}
