@@ -1,5 +1,5 @@
 ---
-title: Sweetaste* - 登入頁
+title: 登入頁
 layout: ./app/layout.ejs
 engine: ejs
 current: login
@@ -9,14 +9,37 @@ current: login
     <ul class="loginBlock">
 
         <li class="titleOfLogin">會員登入</li>
-        <li class="accountInput"><input type="text"></li>
-        <li class="codeInput"><input type="text"></li>
-        <li class="rememberBlock"><input type="checkbox">記住我</li>
+
+        <!-- 手機版socialmedia區開始 -->
+        <div class="socialMediaBlock forMobile">
+            <li class="facebookLogo smButton">
+                <a href="#"><img src="./assets/images/ic-facebook-logotype.svg" alt="facebookLogo"></a>
+            </li>
+            <li class="googleLogo smButton">
+                <a href="#"><img src="./assets/images/ic-google.svg" alt="googleLogo"></a>
+            </li>
+            <li class="yahooLogo smButton">
+                <a href="#"><img src="./assets/images/ic-yahoo.svg" alt="yahooLogo"></a>
+            </li>
+        </div>
+        <!-- 手機版socialmedia區結束 -->
+
+        <li class="userInfo">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="電子信箱/手機號碼">
+        </li>
+        <li class="userInfo">
+            <i class="fas fa-key"></i>
+            <input type="password" placeholder="請輸入使用者密碼">
+        </li>        
+        <li class="rememberBlock">
+            <input type="checkbox">記住我
+        </li>
         <li class="loginButton"><a href="#">登入帳號</a></li>
 
     </ul>
 
-    <ul class="socialMediaBlock">
+    <ul class="socialMediaBlock forWeb">
 
         <li class="titleOfsocialMedia">連結社群帳號</li>
         <li class="facebookLogo smButton">
