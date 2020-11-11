@@ -8,47 +8,72 @@ current: checkout-1
 <!-- 電腦版樣式 -->
 <div class="co1-content">
 
-    <ul class="checkoutcredit">
-        <li>
-            <label for="fname">信用卡卡號</label>
-            <input type="co-1text" placeholder="1234-1234-1234-1234" >
-            <i class="fas fa-credit-card"></i>
-        </li>
-    
-        <li>
-            <label for="fname">持卡人姓名</label>
-            <input type="co-1text"placeholder="王" >
-            <input type="co-1text"placeholder="小明">
-        </li>
-    
-        <li>
-            <label for="fname">有效期限</label>
-            <input type="co-1text" placeholder="王" >
-            <input type="co-1text" placeholder="小明" >
-        </li>
-    
-        <li>
-            <label for="cvv">末三碼</label>
-            <input type="co-1text" placeholder="123" >
-        </li>
-    
-        <li>
-            <input type="submit" value="Submit">
-        </li>
+
+
+
+    <div class="checkoutcredit">
+
+        <div class="step">
+
+            <p class="co-1step">付款</p>
+
+            <!-- 時間軸 -->
+            <div class="cs-container">
+                <ul class="cs-paydone">
+                  <li class="cs-paydone-item timeLine"><i class="fas fa-check"></i></li>
+                  <li class="cs-paydone-item timeLine"><i class="fas fa-check"></i></li>
+                  <li class="cs-paydone-item "></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <ul class="Form">
+            <li>
+                <p class="fname">信用卡卡號</p>
+                <input type="creditcard" placeholder="1234-1234-1234-1234">
+                <i class="fas fa-credit-card"></i>
+            </li>
+        
+            <li>
+                <p class="fname">持卡人姓名</p>
+                <input type="text"placeholder="王" >
+                <input type="text"placeholder="小明">
+            </li>
+        
+            <li>
+                <p class="fname">有效期限</p>
+                <input type="text" placeholder="年" >
+                <input type="text" placeholder="月" >
+            </li>
+        
+            <li>
+                <p class="cvv">末三碼</p>
+                <input type="text" placeholder="123" >
+            </li>
+        
+            <li>
+                <input type="submit" value="Submit">
+            </li>
+            
+            
         
         
+        </ul>
+    </div>
     
-    
-    </ul>
     
     
     <div class=OrderInformation>
 
         <ul class="OrderSummary">
             <li>訂單摘要</li>
-            <li>小計<span></span>NT$2700</li>
-            <li>運費<span></span>NT$300</li>
-            <li>總紀<span></span>NT$3000</li>   
+            <li>小計 NT$2700</li>
+            <li>運費 NT$300</li>
+            <li>
+                <span>總計</span>
+                <span>NT$3000</span>
+            </li>   
         </ul>
 
         <div class="ShoppingList">

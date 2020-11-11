@@ -1007,6 +1007,7 @@ article.why_make .container .reason_img {
 }
 
 .co1-content {
+  min-width: 960px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1017,10 +1018,83 @@ article.why_make .container .reason_img {
 
 .checkoutcredit {
   min-width: 460px;
+  background-color: #3f5d45;
+  padding: 30px 40px;
+}
+
+.checkoutcredit .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkoutcredit .step .co-1step {
+  font-size: 36px;
+}
+
+.cs-container {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.cs-paydone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.cs-paydone-item {
+  color: #FFF;
+  position: relative;
+}
+
+.cs-paydone-item i {
+  width: 10px;
+  position: absolute;
+  top: 1px;
+}
+
+.cs-paydone-item:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 20px;
+  height: 20px;
+  background-color: #3f5d45;
+  border-radius: 50%;
+}
+
+.timeLine:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  border-bottom: 1px solid #3f5d45;
+  top: 10px;
+  bottom: 0px;
+  width: 100px;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 56px;
+  padding: 12px 20px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .OrderInformation {
-  min-width: 300px;
+  width: 300px;
 }
 
 .cs-content {

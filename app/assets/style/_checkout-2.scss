@@ -73,9 +73,9 @@
     width: 100px;
       
 }
-//偽元素時間軸結束
+// 偽元素時間軸結束
 
-input[type=text]{
+.Form input[type=creditcard]{
     width: 100%;
     height: 56px;
     padding: 12px 20px;
@@ -85,8 +85,23 @@ input[type=text]{
     box-sizing: border-box;
 }
 
+.Form input[type=text]{
+    width: 50%;
+    height: 56px;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
 
 .OrderInformation{
-    width: 300px;
+   width: 300px;
+
+   .ul li {
+       display:flex;
+       justify-content:space-between;
+   }
 }
 
