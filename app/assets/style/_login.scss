@@ -16,6 +16,10 @@
         text-align: center;
     }
 
+    .forMobile{
+        display: none;
+    }
+
 }
 
 // 左邊的login區
@@ -30,17 +34,36 @@
         line-height: 120px;
     }
 
-    input{
-        background-color: $light_green;
-        border: 0;
-    }    
+    .userInfo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+
+        i{
+            padding: 4%;
+            align-items: center;
+            color: $dark_green;
+            background-color: $light_green;
+        }
+        
+        input{
+            outline: none;
+            border: none;
+            width: 70%;
+            background-color: $light_green;
+        }
+
+    }
 
     .rememberBlock{
         font-size: 16px;
+        margin-bottom: 5%;
+        padding-right: 70%;
+        outline: none;
+        border: none;
     }
 
     .loginButton{
-        border: pink 1px solid;
         font-size: 24px;
         line-height: 65px;
         background-color: $yellow;
@@ -61,8 +84,27 @@
     font-size: 24px; 
     
     .titleOfsocialMedia{
-        margin: 9% 0;
+        margin: 11% 0;
         font-weight: lighter;
+        position: relative;
+    }
+
+    .titleOfsocialMedia:before,
+    .titleOfsocialMedia:after{
+        position: absolute;
+        content: "";
+        top: 50%;
+        background: #aaa;
+        width: 18%;
+        height: 2px;
+    }
+
+    .titleOfsocialMedia:before{
+        left: 13%;
+    }
+
+    .titleOfsocialMedia:after{
+        right: 13%;
     }
 
     .smButton{
@@ -78,4 +120,57 @@
         }   
 
     }
+}
+
+// 手機版
+@media (max-width: 650px){
+    .content{
+        margin: 0;
+        flex-direction: column;
+
+        .forMobile{
+            display: flex;
+        }
+        .forWeb{
+            display: none;
+        }
+        .loginBlock{
+            width: 100%;
+            margin-top: 0%;
+        }
+    
+    
+    }
+    .socialMediaBlock{
+        display: flex;
+        margin-bottom: 5%;
+        
+        .smButton{
+            display: flex;
+            flex-direction: row;
+            margin: 6% 0;
+            
+            img{
+                width: 60%;
+                margin-left: 20%;
+            }
+
+        }
+        .facebookLogo{
+            margin-left: 6%;
+        }
+        .googleLogo{
+            border-left: solid 2px $light_green;
+            border-right: solid 2px $light_green;
+        }
+        .yahooLogo{
+            margin-right: 6%;
+        }
+
+
+    }
+
+    
+
+
 }
