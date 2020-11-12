@@ -28,10 +28,11 @@
     justify-content: space-between;
     background-color: $dark_green;
     color: $white;
-    font-size: 36px;
 
     .titleOfLogin{
         line-height: 120px;
+        font-size: 36px;
+
     }
 
     .userInfo{
@@ -41,12 +42,22 @@
 
         i{
             padding: 4%;
+            font-size: 16px;
             align-items: center;
             color: $dark_green;
             background-color: $light_green;
         }
         
-        input{
+        input[type=text]{
+            outline: none;
+            border: none;
+            margin: 0%;
+            padding: 0%
+            width: 70%;
+            background-color: $light_green;
+        }
+
+        input[type=password]{
             outline: none;
             border: none;
             width: 70%;
@@ -167,10 +178,6 @@
             margin-right: 6%;
         }
 
-
     }
-
-    
-
 
 }
