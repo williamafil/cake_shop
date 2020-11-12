@@ -1,11 +1,11 @@
 .co1-content{
-    min-width: 960px;
+    max-width: 960px;
     display:flex;
     justify-content:center
 }
 
 .checkoutcredit{
-    min-width: 460px;
+    max-width: 50%;
     background-color: #3f5d45;
     padding: 30px 40px;
 
@@ -17,8 +17,6 @@
             font-size:36px;
         }
     }    
-
-
 }
 
 
@@ -76,25 +74,37 @@
 // 偽元素時間軸結束
 
 .Form input[type=creditcard]{
-    width: 100%;
-    height: 56px;
+    width: 50%;
     padding: 12px 20px;
-    margin: 2px 0;
+    margin: 20px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    color: #8da291;
     box-sizing: border-box;
 }
 
 .Form input[type=text]{
     width: 50%;
-    height: 56px;
     padding: 12px 20px;
     margin: 20px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    color: #8da291;
     box-sizing: border-box;
 }
 
+.Form input[value=1]{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    color: #8da291;
+    // box-sizing: border-box;
+}
+
+.X1{
+    display:flex;
+    justify-content:center;
+
+}
 
 .OrderInformation{
    width: 300px;
