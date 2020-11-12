@@ -6,7 +6,7 @@ current: checkout-2
 ---
 
 <!-- 電腦版樣式 -->
-<div class="co1-content">
+<!-- <div class="co1-content">
 
 
 
@@ -17,7 +17,7 @@ current: checkout-2
 
             <p class="co-1step">付款</p>
 
-            <!-- 時間軸 -->
+            
             <div class="cs-container">
                 <ul class="cs-paydone">
                   <li class="cs-paydone-item timeLine"><i class="fas fa-check"></i></li>
@@ -26,7 +26,7 @@ current: checkout-2
                 </ul>
             </div>
             
-            <!-- 時間軸 -->
+            
             
             
         </div>
@@ -71,9 +71,7 @@ current: checkout-2
         
         </ul>
     </div>
-    
-    
-    
+
     <div class=OrderInformation>
 
         <ul class="OrderSummary">
@@ -93,12 +91,123 @@ current: checkout-2
                 <li>NT$900</li>
             </ui>
         </div>
-
-    
-    </div>
-
-    
-    
+    </div> -->
     <!-- 手機樣式 -->
-</div>
+<!-- </div> -->
 
+<main class="checkout order_container">
+    <div class="checkout_form">
+      <div class="wrapper">
+        <div class="checkout_heading">
+          <h3>付款</h3>
+          <div class="progress">
+            <div class="pixel"><i class="fas fa-check-circle"></i></div>
+            <div class="pixel circle"></div>
+            <div class="pixel circle"></div>
+          </div>
+        </div>
+        <div class="form_row">
+          <div class="one_column">
+            <h6 class="label">信用卡</h6>
+            <label class="credit_card_icon" for="creditcard">
+              <input
+                type="text"
+                name="creditcard"
+                id="creditcard"
+                placeholder="9012-3384-3456-3874"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="form_row">
+          <div class="left_column">
+            <h6 class="label">持卡人姓名</h6>
+            <input type="text" name="" id="" placeholder="王" />
+          </div>
+          <div class="right_column">
+            <h6 class="label"></h6>
+            <input type="text" name="" id="" placeholder="小明" />
+          </div>
+        </div>
+        <div class="form_row">
+          <div class="left_column">
+            <h6 class="label">有效日期</h6>
+            <select id="month" name="month">
+              <option value="">月</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+            </select>
+          </div>
+          <div class="right_column">
+            <h6 class="label"></h6>
+            <select id="year" name="year">
+              <option value="">年</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+            <!-- <input type="text" name="" id="" placeholder="小明"> -->
+          </div>
+        </div>
+        <div class="form_row">
+          <div class="left_column">
+            <h6 class="label">背面末三碼</h6>
+            <input type="text" name="" id="" placeholder="123" />
+          </div>
+          <div class="right_column"></div>
+        </div>
+      </div>
+      <a class="next_link" href="checkout-3.html">
+        <div class="next_step">下一步</div>
+      </a>
+    </div>
+    <div class="right_column">
+      <div class="order_detail">
+        <h3 class="order_detail_title">訂單摘要</h3>
+        <div class="order_total">
+          <div class="subtotal">
+            <h4>小計</h4>
+            <p>NT $2,700</p>
+          </div>
+          <div class="shipping">
+            <h4>運費</h4>
+            <p>NT $200</p>
+          </div>
+          <div class="grand_total">
+            <h3>總計</h3>
+            <p>NT $2,900</p>
+          </div>
+        </div>
+      </div>
+      <div class="order_detail">
+        <h3 class="order_detail_title">購物清單</h3>
+        <div class="ordered_items">
+          <div class="item">
+            <img src="../assets/images/p-5.png" alt="" />
+            <div class="item_info">
+              <h4>焦糖馬卡龍 (2)</h4>
+              <p>NT $900</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ordered_items">
+          <div class="item">
+            <img src="../assets/images/p-4.png" alt="" />
+            <div class="item_info">
+              <h4>焦糖馬卡龍 (2)</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>

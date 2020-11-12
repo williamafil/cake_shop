@@ -128,3 +128,383 @@
 
 }
 
+
+// ____________________________________________________________________
+
+
+main.checkout {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+    .checkout_form {
+      width: 460px;
+      .wrapper {
+        background-color: #3f5d45;
+        padding: 40px;
+        .checkout_heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 30px;
+          h3 {
+            font-size: 36px;
+            color: #fff;
+          }
+          .progress {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            position: relative;
+            .pixel {
+              position: relative;
+              .fa-check-circle {
+                font-size: 21px;
+                color: #fff;
+              }
+            }
+            .circle {
+              background-color: #fff;
+              border: 3px solid #3f5d45;
+              border-radius: 50%;
+              box-shadow: 0 0 0 1px #fff;
+              outline-offset: 5px;
+              height: 20px;
+              width: 20px;
+            }
+            .active::after {
+              content: "\f00c";
+              font-family: "Font Awesome 5 Free";
+              display: inline-block;
+              border-radius: 50%;
+              background-color: #fff;
+              color: #3f5d45;
+              font-size: 20px;
+              position: absolute;
+              top: 0px;
+              left: 0px;
+            }
+          }
+          .progress::before {
+            content: "";
+            width: 65px;
+            height: 1px;
+            position: absolute;
+            background-color: #fff;
+            top: 10px;
+            left: 20px;
+          }
+          .progress::after {
+            content: "";
+            width: 65px;
+            height: 1px;
+            position: absolute;
+            background-color: #fff;
+            top: 10px;
+            left: 105px;
+          }
+        }
+  
+        .receipt {
+          position: relative;
+  
+          .e_receipt {
+            position: absolute;
+            top: 30%;
+            left: 15%;
+            font-size: 20px;
+            color: #3f5d45;
+          }
+  
+          .paper_receipt {
+            position: absolute;
+            top: 30%;
+            right: 15%;
+            font-size: 20px;
+            color: #eaf0ed;
+          }
+  
+          .switch > input:checked ~ .e_receipt {
+            color: #eaf0ed;
+          }
+          .switch > input:checked ~ .paper_receipt {
+            color: #3f5d45;
+          }
+  
+          .switch {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 56px;
+          }
+  
+          .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+          }
+  
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #3f5d45;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            border: 1px solid #eaf0ed;
+          }
+  
+          .slider:before {
+            position: absolute;
+            content: "";
+            height: 56px;
+            width: 50%;
+            left: 0px;
+            bottom: 0px;
+            background-color: white;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+          }
+  
+          input:checked + .slider {
+            background-color: #3f5d45;
+          }
+  
+          input:focus + .slider {
+            box-shadow: 0 0 1px #3f5d45;
+          }
+  
+          input:checked + .slider:before {
+            transform: translateX(100%);
+          }
+        }
+  
+        .form_row {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+  
+          input::placeholder {
+            color: #8da291;
+          }
+  
+          .left_column > input,
+          .right_column > input,
+          .left_column > select,
+          .right_column > select {
+            box-sizing: border-box;
+            height: 56px;
+            width: 100%;
+            border: 0;
+            margin: 0 0 8px 0;
+            padding: 17px 0 17px 20px;
+            color: #8da291;
+            background-color: #eaf0ed;
+          }
+          .left_column,
+          .right_column {
+            font-size: 20px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+          }
+          .left_column {
+            flex: 1;
+            margin-right: 8px;
+          }
+          .right_column {
+            flex: 1;
+          }
+  
+          .label {
+            margin: 8px 0;
+          }
+  
+          .one_column {
+            font-size: 20px;
+            color: #fff;
+            flex: 1;
+
+            input {
+                box-sizing: border-box;
+                height: 56px;
+                width: 100%;
+                border: 0;
+                margin: 8px 0;
+                padding: 17px 0 17px 20px;
+                color: #8da291;
+                background-color: #eaf0ed;
+              }
+          }  
+
+          input:last-child {
+            margin-top: 0;
+          }
+  
+          .credit_card_icon::after {
+            content: "\f09d";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: relative;
+            display: inline-block;
+            top: -48px;
+            left: 340px;
+            color: #3f5d45;
+          }
+        }
+  
+        .subtotal,
+        .shipping,
+        .grand_total {
+          margin: 10px 0;
+          display: flex;
+          justify-content: space-between;
+          color: #fff;
+          font-size: 15px;
+          font-weight: 200;
+        }
+  
+        .grand_total {
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+  
+      .next_link {
+        color: #3f5d45;
+        text-decoration: none;
+        .next_step {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #ffe180;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bolder;
+          height: 65px;
+        }
+      }
+  
+      .next_link:hover > .next_step {
+        background-color: #f9db7b;
+      }
+    }
+  
+    .order_detail {
+      flex: 1;
+      margin: 0 0 20px 20px;
+      width: 300px;
+      border: 1px solid #eaf0ed;
+  
+      .order_detail_title {
+        background-color: #eaf0ed;
+        padding: 16px 0;
+        font-size: 24px;
+        text-align: center;
+        color: #8da291;
+      }
+      .order_total {
+        background-color: #fff;
+  
+        padding: 20px;
+        .subtotal,
+        .shipping,
+        .grand_total {
+          margin: 10px 0;
+          display: flex;
+          justify-content: space-between;
+          color: #8da291;
+          font-size: 15px;
+          font-weight: 200;
+        }
+        .grand_total {
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+    }
+    .ordered_items {
+      padding: 20px 0;
+  
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+  
+      .item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+  
+        img {
+          height: 110px;
+          width: 110px;
+        }
+        .item_info {
+          padding: 20px;
+          font-size: 16px;
+          color: #8da291;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          h4 {
+            font-weight: 200;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 414px) {
+    main.checkout {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 0;
+      .checkout_form {
+        width: 100%;
+        .wrapper {
+          padding: 20px;
+          .checkout_heading {
+            .progress::before {
+              content: "";
+              width: 55px;
+              height: 1px;
+              position: absolute;
+              background-color: #fff;
+              top: 10px;
+              left: 20px;
+            }
+            .progress::after {
+              content: "";
+              width: 52px;
+              height: 1px;
+              position: absolute;
+              background-color: #fff;
+              top: 10px;
+              left: 95px;
+            }
+          }
+          .form_row {
+            .one_column {
+              .credit_card_icon::after {
+                position: relative;
+                left: 290px;
+              }
+            }
+          }
+          .receipt {
+            .slider {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .right_column {
+        display: none;
+      }
+    }
+  }
+  
