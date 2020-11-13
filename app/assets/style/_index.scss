@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-// 上方banner區
-.topBanner{
-  max-width: 960px;
-=======
 // Banner
 // img 自適應
 .landing-banner {
@@ -14,43 +9,12 @@
 // background 自適應
 .landingbanner {
   width: 100%;
->>>>>>> 0bd477b03fea6044ec82930b4e83df9d6e23f0ac
   height: 496px;
   margin: 5% auto 30% auto;
   background-image: url(../images/slide.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
-<<<<<<< HEAD
-}
-
-// 中間三個方塊區
-.selectBox{
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  position: absolute;
-  left:10%;
-  top: 83%;
-  
-  .allBox{
-    width: 260px;
-    height: 256px;
-    font-size: 24px;
-    background-color: rgba(12, 83, 18, 0.45);
-    background-position: center center;
-    background-blend-mode: multiply;
-
-    a{
-      display: block;
-      font-weight: lighter;
-      line-height: 30px;
-      padding: 28% 48%;
-      color: $white;
-
-    }
-
-=======
   margin-bottom: 200px;
 }
 
@@ -200,25 +164,8 @@ article.reason {
     .order_3 {
       order: 3;
     }
->>>>>>> 0bd477b03fea6044ec82930b4e83df9d6e23f0ac
   }
 
-<<<<<<< HEAD
-  .box1{
-    background-image: url(../images/topic_1.jpg);
-  }
-
-  .box2{
-    background-image: url(../images/topic_3.jpg);
-  }
-
-  .box3{
-    background-image: url(../images/topic_2.jpg);
-  }
-
-
-}
-=======
 /////////////////////////////
 ////// 想吃甜點 是不需要理由的。
 /////////////////////////////
@@ -350,4 +297,3 @@ section.feature_product {
     background-color: $light_green_hover;
   }
 }
->>>>>>> 0bd477b03fea6044ec82930b4e83df9d6e23f0ac
