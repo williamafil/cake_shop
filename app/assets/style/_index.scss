@@ -1,122 +1,53 @@
-// Banner
-// img 自適應
-.landing-banner {
-  width: 100%;
-
-  img {
-    width: 100%;
-    max-height: 496px;
-    object-fit: cover;
-  }
-}
-
-// Banner
-// background 自適應
-.landingbanner {
-  width: 100%;
+// 上方banner區
+.topBanner{
+  max-width: 960px;
   height: 496px;
-
-  background-image: url("../images/slide.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: 5% auto 30% auto;
+  background-image: url(../images/slide.jpg);
   background-position: center;
+  background-size: cover;
   position: relative;
-  margin-bottom: 150px;
 }
 
-// 中間三格
-.boxes {
-  width: 75%;
-  height: 40%;
-  background-color: rgb(226, 103, 21);
-  position: absolute;
-  bottom: -45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+// 中間三個方塊區
+.selectBox{
   display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  position: absolute;
+  left:10%;
+  top: 83%;
+  
+  .allBox{
+    width: 260px;
+    height: 256px;
+    font-size: 24px;
+    background-color: rgba(12, 83, 18, 0.45);
+    background-position: center center;
+    background-blend-mode: multiply;
 
-  .box {
-    border: 1px solid #fff;
-    width: 33.333%;
-    height: 100%;
+    a{
+      display: block;
+      font-weight: lighter;
+      line-height: 30px;
+      padding: 28% 48%;
+      color: $white;
+
+    }
+
   }
-}
 
-article.why_make {
-  background-color: $light_green;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    max-height: 420px;
-    position: relative;
-
-    .heading {
-      order: 3;
-      writing-mode: vertical-rl;
-      font-size: 24px;
-      font-weight: 700;
-      letter-spacing: 5px;
-      text-indent: -16px;
-      line-height: 35px;
-      position: absolute;
-      top: -1%;
-      right: 0;
-    }
-
-    .content {
-      order: 2;
-      max-width: 300px;
-
-      writing-mode: vertical-rl;
-      letter-spacing: 5px;
-      line-height: 40px;
-      padding: 65px 100px 65px 20px;
-    }
-
-    .reason_img {
-      order: 1;
-      position: relative;
-      top: -20px;
-      width: 460px;
-      height: 460px;
-
-      background-image: url("../images/reason2.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
+  .box1{
+    background-image: url(../images/topic_1.jpg);
   }
-}
 
-@media (max-width: 935px) {
-  article.why_make {
-    .container {
-      .content {
-        line-height: 35px;
-        padding: 60px 90px 60px 15px;
-      }
-    }
-
-    .reason_img {
-      width: 380px;
-      height: auto;
-    }
+  .box2{
+    background-image: url(../images/topic_3.jpg);
   }
-}
 
-@media (max-width: 850px) {
-  article.why_make {
-    .container {
-      .content {
-        line-height: 33px;
-        padding: 55px 80px 50px 10px;
-        font-size: 14px;
-      }
-    }
-    .reason_img {
-      width: 380px;
-      height: auto;
-    }
+  .box3{
+    background-image: url(../images/topic_2.jpg);
   }
+
+
 }
