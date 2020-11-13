@@ -1,12 +1,27 @@
+<<<<<<< HEAD
 // 上方banner區
 .topBanner{
   max-width: 960px;
+=======
+// Banner
+// img 自適應
+.landing-banner {
+  width: 100%;
+}
+
+
+// Banner
+// background 自適應
+.landingbanner {
+  width: 100%;
+>>>>>>> 0bd477b03fea6044ec82930b4e83df9d6e23f0ac
   height: 496px;
   margin: 5% auto 30% auto;
   background-image: url(../images/slide.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
+<<<<<<< HEAD
 }
 
 // 中間三個方塊區
@@ -35,8 +50,160 @@
 
     }
 
+=======
+  margin-bottom: 200px;
+}
+
+/////////////////////////////
+////// banner 中間三格
+/////////////////////////////
+.banner_menu {
+  width: 75%;
+  height: 40%;
+  position: absolute;
+  bottom: -45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin: 0 5px;
+
+
+  .topic_bg1 {
+    background-image: url("../images/topic_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    // opacity: .3;
+  }
+  .topic_bg2 {
+    background-image: url("../images/topic_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // opacity: .3;
+  }
+  .topic_bg3 {
+    background-image: url("../images/topic_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    // opacity: .3;
   }
 
+  .menu_item {
+    width: 33.333%;
+    height: 100%;
+    margin: 1px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      writing-mode: vertical-rl;
+      font-size: 24px;
+      font-weight: 300;
+      color: #fff;
+      letter-spacing: 5px;
+      z-index: 2;
+    }
+    .color_layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(63, 93, 69, .8);
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  }
+  .featured_item {
+    .color_layer {
+      background-color: rgba(255, 225, 128, 0.9);
+    }
+    h2 {
+      color: #3f5d45;
+      font-weight: bold;
+    }
+  }
+}
+
+
+/////////////////////////////
+////// 為什麼選擇了....
+/////////////////////////////
+
+article.reason {
+  background-color: $light_green;
+  margin: 100px 0;
+  height: 420px;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #3f5d45;
+    .question {
+      order: 3;
+      font-size: 24px;
+      font-weight: 700;
+
+      writing-mode: vertical-rl;
+      text-indent: -15px;
+      line-height: 50px;
+      letter-spacing: 3px;
+      position: relative;
+    }
+    .question::after {
+      content: "";
+      height: 50px;
+      width: 1px;
+      top: 60px;
+      left: 75px;
+      background-color: #3f5d45;
+      position: absolute;
+    }
+    .reason_img {
+      order: 1;
+      position: relative;
+      img {
+        object-fit: cover;
+        position: relative;
+        top: -20px;
+        left: 0;
+        width: 460px;
+        height: 460px;
+      }
+    }
+    .answer {
+      order: 2;
+      // padding: 60px;
+      padding: 60px 20px 60px 20px;
+      text-align: center;
+      line-height: 40px;
+      writing-mode: vertical-rl;
+      letter-spacing: 2px;
+      height: 420px;
+      max-width: 400px;
+    }
+
+    .order_1 {
+      order: 1;
+    }
+
+    .order_2 {
+      order: 2;
+    }
+
+    .order_3 {
+      order: 3;
+    }
+>>>>>>> 0bd477b03fea6044ec82930b4e83df9d6e23f0ac
+  }
+
+<<<<<<< HEAD
   .box1{
     background-image: url(../images/topic_1.jpg);
   }
@@ -51,3 +218,136 @@
 
 
 }
+=======
+/////////////////////////////
+////// 想吃甜點 是不需要理由的。
+/////////////////////////////
+article.eat_slogan {
+  // margin-bottom: 40px;
+  padding: 40px 0;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  writing-mode: vertical-rl;
+  font-size: 24px;
+  font-family: serif;
+  font-weight: bolder;
+  color: #3f5d45;
+  text-indent: -15px;
+  line-height: 45px;
+  letter-spacing: 5px;
+}
+
+article.eat_slogan::after {
+  content: "";
+  height: 45px;
+  width: 1px;
+  top: 45%;
+  left: 75%;
+  background-color: #3f5d45;
+  position: absolute;
+}
+
+/////////////////////////////
+////// 三欄 精選產品
+/////////////////////////////
+section.feature_product {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.item + .item {
+  margin-left: 10px;
+}
+
+.item {
+  border: 1px solid $light_green;
+  .img_holder {
+    position: relative;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+
+      transition: all 0.5s ease-out;
+    }
+    img:hover {
+      overflow: hidden;
+      transform: scale(1.2, 1.2);
+    }
+
+    .tag {
+      writing-mode: vertical-rl;
+      letter-spacing: 2px;
+      font-size: 16px;
+      position: absolute;
+      top: 0;
+      left: 20px;
+      background-color: #3f5d45;
+      padding: 10px;
+      color: #fff;
+    }
+    .heart {
+      position: absolute;
+      top: 19px;
+      right: 22px;
+      cursor: pointer;
+
+      i.far {
+        color: $dark_green;
+      }
+      i.fas {
+        color: $heart_full;
+      }
+    }
+    .heart i:hover {
+      color: $heart_full;
+    }
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #eaf0ed;
+    border-right: 1px solid #eaf0ed;
+    color: #3f5d45;
+    font-size: $font-m;
+
+    .title {
+      flex-grow: 1;
+      border-right: 1px solid #eaf0ed;
+      padding: 10px;
+      text-align: center;
+      font-weight: 200;
+    }
+
+    .price {
+      flex-grow: 1;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .cta {
+    background-color: $light_green;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: #3f5d45;
+    cursor: pointer;
+  }
+  .cta:hover {
+    background-color: $light_green_hover;
+  }
+}
+>>>>>>> 0bd477b03fea6044ec82930b4e83df9d6e23f0ac
