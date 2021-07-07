@@ -26,7 +26,7 @@ Automated front-end development using Gulp, SCSS, and EJS Template to modularize
 
 
 ## Instructions
--`gulp` - Execute development mode
--`gulp build` - execute build mode 
--`gulp clean` - clear the dist folder
--`gulp deploy` - Deploy the dist folder to GitHub Pages
+- `gulp` - Execute development mode
+- `gulp build` - execute build mode 
+- `gulp clean` - clear the dist folder
+- `gulp deploy` - Deploy the dist folder to GitHub Pages
