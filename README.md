@@ -2,9 +2,9 @@
 
 
 # 甜點電商切版 - 第六屆火箭隊前端協作
-[線上展示](https://williamafil.github.io/cake_shop/dist/product.html)
-[Github Repo](https://github.com/williamafil/cake_shop/tree/main/dist)
-[設計稿](https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/)
+- [線上展示](https://williamafil.github.io/cake_shop/dist/product.html)
+- [Github Repo](https://github.com/williamafil/cake_shop/tree/main/dist)
+- [設計稿](https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/)
 
 四人合作完成六角甜點電商切版練習。使用 Gulp + EJS Template + SCSS 實作 HTML 模板化，讓部分模板可被重複利用，增加日後維護性。
 
