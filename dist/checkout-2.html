@@ -1,59 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sweetaste* - Sweetaste* - checkout2</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Sweetaste* - Sweetaste* - checkout2</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css"
+  />
+  <link
+    rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css'
+  />
+  <link
+    rel="stylesheet"
+    href="./assets/style/all.css"
+  />
+</head>
+
+<body>
+
+
+  <!-- 網頁版nav部分 -->
+  <header class="container">
+    <nav class="fullsize">
+      <a
+        href="index.html"
+        class="logo"
+      >
+        <img
+          src="./assets/images/logo-all-dark.svg"
+          alt="sweetaste logo"
+        />
+      </a>
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="product.html">甜點</a></li>
+        <li><a href="login.html">登入</a></li>
+        <li><a
+            href="cart.html"
+            target="_self"
+          ><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </nav>
+
+
+    <!-- 手機版nav部分-->
+    <input
+      type="checkbox"
+      name="nav-toggle"
+      id="nav-toggle"
+      class="d-none"
     />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css'/>
-    <link rel="stylesheet" href="./assets/style/all.css" />
-  </head>
+    <nav class="mobile">
 
-  <body>
+      <label for="nav-toggle">
+        <i class="fas fa-bars hamburger"></i>
+      </label>
 
+      <a
+        href="index.html"
+        class="logo"
+      >
+        <img
+          src="./assets/images/logo-all-dark.svg"
+          alt="sweetaste logo"
+        />
+      </a>
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+    </nav>
 
- <!-- 網頁版nav部分 -->
-    <header class="container">
-      <nav class="fullsize">
-        <a href="index.html" class="logo">
-          <img src="../assets/images/logo-all-dark.svg" alt="sweetaste logo" />
-        </a>
-        <ul>
-          <li><a href="index.html">首頁</a></li>
-          <li><a href="product.html">甜點</a></li>
-          <li><a href="login.html">登入</a></li>
-          <li><a href="cart.html"  target="_self"><i class="fas fa-shopping-cart"></i></a></li>
-        </ul>
-      </nav>
+    <div class="collapse_menu">
+      <ul>
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="product.html">甜點</a></li>
+        <li><a href="login.html">登入</a></li>
+      </ul>
+    </div>
+  </header>
 
-
-<!-- 手機版nav部分-->
-      <input type="checkbox" name="nav-toggle" id="nav-toggle" class="d-none" />
-      <nav class="mobile">
-
-        <label for="nav-toggle">
-          <i class="fas fa-bars hamburger"></i>
-        </label>
-
-        <a href="index.html" class="logo">
-          <img src="../assets/images/logo-all-dark.svg" alt="sweetaste logo" />
-        </a>
-        <a href="cart.html"><i class="fas fa-shopping-cart"></i>
-      </nav>
-
-      <div class="collapse_menu">
-        <ul>
-          <li><a href="index.html">首頁</a></li>
-          <li><a href="product.html">甜點</a></li>
-          <li><a href="login.html">登入</a></li>
-        </ul>
-      </div>
-    </header>
-
-    
+  
 <!-- 電腦版樣式 -->
 <!-- <div class="co1-content">
 
@@ -241,7 +271,7 @@
         <h3 class="order_detail_title">購物清單</h3>
         <div class="ordered_items">
           <div class="item">
-            <img src="../assets/images/p-5.png" alt="" />
+            <img src="./assets/images/p-5.png" alt="" />
             <div class="item_info">
               <h4>焦糖馬卡龍 (2)</h4>
               <p>NT $900</p>
@@ -251,7 +281,7 @@
 
         <div class="ordered_items">
           <div class="item">
-            <img src="../assets/images/p-4.png" alt="" />
+            <img src="./assets/images/p-4.png" alt="" />
             <div class="item_info">
               <h4>焦糖馬卡龍 (2)</h4>
             </div>
@@ -261,73 +291,100 @@
     </div>
   </main>
 
-    
+  <footer>
+    <div class="subscription">
+      <div class="mailhint">
 
-    <footer>
-     <div class="subscription">
-        <div class="mailhint">
+        <img
+          src="./assets/images/logo-light.svg"
+          alt=""
+        >
+        <p>訂閱你我的甜蜜郵件</p>
 
-          <img src="../assets/images/logo-light.svg" alt="">
-          <p>訂閱你我的甜蜜郵件</p>
-        
+      </div>
+
+      <div class="typeemail">
+
+        <div class="email">
+
+          <img
+            src="./assets/images/mail-24px.png"
+            alt=""
+          >
+
+          <form
+            action="test.php"
+            method="post"
+          >
+            <input
+              type="text"
+              name="UserName"
+            >
         </div>
 
-        <div class="typeemail">
-
-          <div class="email">
-
-            <img src="../assets/images/mail-24px.png" alt="">
-
-          <form action="test.php" method="post">
-            <input type="text" name="UserName">
-          </div>
-
-            <div class="subimt">
-            <input type="image" src="assets/images/arrow_forward-24px.png" alt="Submit">
-           </div>
-          </form>
-
-
-
+        <div class="subimt">
+          <input
+            type="image"
+            src="./assets/images/arrow_forward-24px.png"
+            alt="Submit"
+          >
         </div>
-    </div>
+        </form>
 
 
-  <div class="contact">
 
-    <div class="contactus">
-      <div class="contactlogo">
-        <img src="../assets/images/logotype-lg-dark.png" alt="logo">
       </div>
-      
-      
-      <div class="contactinfo">
-      <P>07-1234-5678</P>
-      <P>sweetaste@email.com</P>
-      <P>800 高雄市新興區幸福路 520 號</P>
-     </div>
-
-      <div class="icon">
-      <a href="#facebook"><img src="../assets/images/ic-facebook.svg" alt=""></a>
-      <a href="#line"><img src="../assets/images/ic-line@.svg" alt=""></a>
-    </div>
-
     </div>
 
 
-    <div class="brand">
-      <div class="slogan">
-        <img src="../assets/images/sm-今天是個吃甜點的好日子.png" alt="slogan">
+    <div class="contact">
+
+      <div class="contactus">
+        <div class="contactlogo">
+          <img
+            src="./assets/images/logotype-lg-dark.png"
+            alt="logo"
+          >
+        </div>
+
+
+        <div class="contactinfo">
+          <P>07-1234-5678</P>
+          <P>sweetaste@email.com</P>
+          <P>800 高雄市新興區幸福路 520 號</P>
+        </div>
+
+        <div class="icon">
+          <a href="#facebook"><img
+              src="./assets/images/ic-facebook.svg"
+              alt=""
+            ></a>
+          <a href="#line"><img
+              src="./assets/images/ic-line@.svg"
+              alt=""
+            ></a>
+        </div>
+
       </div>
-      
 
-    <div class="copyright">
-     <P>© 2018 Sweetaste* All Rights Reserved</P>
-    </div>
+
+      <div class="brand">
+        <div class="slogan">
+          <img
+            src="./assets/images/sm-今天是個吃甜點的好日子.png"
+            alt="slogan"
+          >
+        </div>
+
+
+        <div class="copyright">
+          <P>© 2018 Sweetaste* All Rights Reserved</P>
+        </div>
+
+      </div>
 
     </div>
-        
-  </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
