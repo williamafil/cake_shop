@@ -1,7 +1,7 @@
 public
 node_modules
 .publish
-dist
+# dist
 .vscode
 .DS_Store
 .map
