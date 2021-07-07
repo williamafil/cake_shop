@@ -20,9 +20,9 @@
 # Sweetaste Cake Shop RWD Layout (6th Rocket Coding Frontend)
 Automated front-end development using Gulp, SCSS, and EJS Template to modularize components each minimize work redundancy, and increase code readability and scalability.  
 
-[Demo](https://williamafil.github.io/cake_shop/dist/product.html)
-[Github Repo](https://github.com/williamafil/cake_shop/tree/main/dist)
-[UI Design](https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/)
+- [Demo](https://williamafil.github.io/cake_shop/dist/product.html)
+- [Github Repo](https://github.com/williamafil/cake_shop/tree/main/dist)
+- [UI Design](https://xd.adobe.com/spec/934efdb7-a7e4-47d5-572e-efece0914f62-e57f/)
 
 
 ## Instructions
